@@ -2,16 +2,60 @@
 
 A new Flutter project.
 
-## Getting Started
+## Prerequisites
 
-This project is a starting point for a Flutter application.
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) installed (Dart 3.13+)
+- Android Studio / Xcode (for mobile emulators/simulators) or Google Chrome / Edge (for web)
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 1. Clone the Project
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/xiaotiangou3/SSW3401-Lab-1.git
+cd SSW3401-Lab-1
+```
+
+Install dependencies:
+
+```bash
+flutter pub get
+```
+
+---
+
+## 2. Run on Emulators / Simulators
+
+1. Check available emulators and devices:
+   ```bash
+   flutter devices
+   flutter emulators
+   ```
+
+2. Launch an emulator (if not already opened):
+   ```bash
+   flutter emulators --launch <emulator_id>
+   ```
+
+3. Run the app:
+   ```bash
+   flutter run
+   ```
+   *(Or specify the target device directly: `flutter run -d <device_id>`)*
+
+---
+
+## 3. Run in Web Browsers
+
+Run the app in Google Chrome:
+
+```bash
+flutter run -d chrome
+```
+
+Or in Microsoft Edge:
+
+```bash
+flutter run -d edge
+```
+
