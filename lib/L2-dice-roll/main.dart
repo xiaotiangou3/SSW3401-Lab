@@ -1,4 +1,5 @@
 import 'dart:math';
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MyApp());
@@ -13,6 +14,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   int _diceNumber = 1;
   final _random = Random();
+  final _player = AudioPlayer();
 
   static const Map<int, Set<int>> _dotPatterns = {
     1: {4},
@@ -23,10 +25,17 @@ class _MyAppState extends State<MyApp> {
     6: {0, 2, 3, 5, 6, 8},
   };
 
+  @override
+  void dispose() {
+    _player.dispose();
+    super.dispose();
+  }
+
   void _rollDice() {
     setState(() {
       _diceNumber = _random.nextInt(6) + 1;
     });
+    _player.play(AssetSource('audio/dice_roll.mp3'));
   }
 
   Widget _buildDiceFace() {
