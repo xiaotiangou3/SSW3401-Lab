@@ -1,4 +1,4 @@
-# Week 2 Lab
+# SSW3307 Lab
 
 A new Flutter project.
 
@@ -12,8 +12,8 @@ A new Flutter project.
 ## 1. Clone the Project
 
 ```bash
-git clone https://github.com/xiaotiangou3/SSW3401-Lab-1.git
-cd SSW3401-Lab-1
+git clone https://github.com/xiaotiangou3/SSW3401-Lab.git
+cd SSW3401-Lab
 ```
 
 Install dependencies:
@@ -39,7 +39,7 @@ flutter pub get
 
 3. Run the app:
    ```bash
-   flutter run
+   flutter run -t lib/<LAB_FOLDER_NAME>/main.dart
    ```
    *(Or specify the target device directly: `flutter run -d <device_id>`)*
 
@@ -50,12 +50,12 @@ flutter pub get
 Run the app in Google Chrome:
 
 ```bash
-flutter run -d chrome
+flutter run -d chrome -t lib/<LAB_FOLDER_NAME>/main.dart
 ```
 
 Or in Microsoft Edge:
 
 ```bash
-flutter run -d edge
+flutter run -d edge -t lib/<LAB_FOLDER_NAME>/main.dart
 ```
 
