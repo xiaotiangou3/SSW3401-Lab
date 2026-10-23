@@ -81,8 +81,10 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(fontFamily: 'ProductSans'),
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: AppBar(title: const Text('Dice Roll')),
+        appBar: AppBar(title: const Text('Lab 2 Project: Dice Roll')),
         body: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -100,3 +102,4 @@ class _MyAppState extends State<MyApp> {
     );
   }
 }
+
